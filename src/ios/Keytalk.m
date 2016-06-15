@@ -24,6 +24,6 @@
 
 + (NSString*)cordovaVersion;
 
-- (void)getKeytalk:(CDVInvokedUrlCommand*)command
+- (void)getKeytalk:(CDVInvokedUrlCommand*)command;
 
 @end
