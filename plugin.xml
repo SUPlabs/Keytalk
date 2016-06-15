@@ -8,7 +8,7 @@
         <clobbers target="keytalk" />
     </js-module>
     <platform name="ios">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="ios-package" parent="/*">
             <feature name=“keytalk">
                 <param name="ios-package" value="CDVKeytalk"/>
             </feature>
