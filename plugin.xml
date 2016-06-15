@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="CDVKeytalk" version="0.0.2">
-        <platform name="ios">
-            <config-file target="config.xml" parent="/*">
-                <feature name="Keytalk">
-                    <param name="ios-package" value="CDVKeytalk" />
-                </feature>
-            </config-file>
-        </platform>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-keytalk" version="0.0.2">
+    <name>Keytalk</name>
+    <description>Cordova Device Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,keytalk</keywords>
+    <js-module src="www/keytalk.js" name="keytalk">
+        <clobbers target="keytalk" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Keytalk">
+                <param name="ios-package" value="CDVKeytalk"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVKeytalk.h" />
+        <source-file src="src/ios/CDVKeytalk.m" />
+    </platform>
 </plugin>
