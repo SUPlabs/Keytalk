@@ -1,7 +1,10 @@
-<platform name="ios">
-    <config-file target="config.xml" parent="/*">
-        <feature name="Keytalk">
-            <param name="ios-package" value="Keytalk" />
-        </feature>
-    </config-file>
-</platform>
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="Keytalk" version="0.0.1">
+        <platform name="ios">
+            <config-file target="config.xml" parent="/*">
+                <feature name="Keytalk">
+                    <param name="ios-package" value="Keytalk" />
+                </feature>
+            </config-file>
+        </platform>
+</plugin>
