@@ -14,18 +14,14 @@ channel.waitForInitialization('onCordovaInfoReady');
  * phone, etc.
  * @constructor
  */
-function Keytalk() {
+
+var Keytalk = {
+
+	alert = function(successCallback, errorCallback) {
+    	argscheck.checkArgs('fF', 'Keytalk.alert', arguments);
+    	exec(successCallback, errorCallback, "Keytalk", "alert", [title, message, buttonLabel]);
+	};
+
 }
 
-/**
- * Get device info
- *
- * @param {Function} successCallback The function to call when the heading data is available
- * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
- */
-Keytalk.prototype.alert = function(successCallback, errorCallback) {
-    argscheck.checkArgs('fF', 'Keytalk.alert', arguments);
-    exec(successCallback, errorCallback, "Keytalk", "alert", [title, message, buttonLabel]);
-};
-
-module.exports = new Keytalk();
+module.exports = Keytalk;
