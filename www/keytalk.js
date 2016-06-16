@@ -20,11 +20,12 @@
  */
 
 
-var KeyTalk = {
-	doLogin:function(successCallback, errorCallback, options) {
-    alert("Start");    
-    }
-}
-
-
-module.exports = Keytalk();
+module.exports = {
+  alert: function(title, message, buttonLabel, successCallback) {
+    cordova.exec(successCallback,
+                 null, // No failure callback
+                 "Keytalk",
+                 "alert",
+                 [title, message, buttonLabel]);
+  }
+};
