@@ -18,6 +18,13 @@
                 Code to retrieve username, password and pincode needed to proceed
                 **/
                
+               exec(
+                success, 
+                error, 
+                "<service>", 
+                "login", 
+                args
+                );
                
 
                }
