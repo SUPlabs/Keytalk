@@ -7,7 +7,7 @@
 //@end
 #import <Cordova/CDV.h>
 
-@interface Alert : CDVPlugin <UIAlertViewDelegate> {}
+@interface Keytalk : CDVPlugin <UIAlertViewDelegate> {}
 - (void)alert:(CDVInvokedUrlCommand*)command;
 @end
 
