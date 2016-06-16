@@ -1,16 +1,7 @@
-//#import <Cordova/CDVPlugin.h>
-//
-//@interface Keytalk : CDVPlugin
-//
-//- (void)getKeytalk:(CDVInvokedUrlCommand*)command;
-//
-//@end
 #import <Cordova/CDV.h>
 
-@interface Keytalk : CDVPlugin <UIAlertViewDelegate> {}
-- (void)alert:(CDVInvokedUrlCommand*)command;
-@end
+@interface CDVKeytalk : CDVPlugin
 
-@interface MyAlertView : UIAlertView {}
-@property (nonatomic, copy) NSString* callbackId;
+- (void)login:(CDVInvokedUrlCommand*)command;
+
 @end

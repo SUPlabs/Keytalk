@@ -1,27 +1,26 @@
-var argscheck = require('cordova/argscheck'),
-    channel = require('cordova/channel'),
-    utils = require('cordova/utils'),
-    exec = require('cordova/exec'),
-    cordova = require('cordova');
+    var argscheck = require('cordova/argscheck'),
+        channel = require('cordova/channel'),
+        utils = require('cordova/utils'),
+        exec = require('cordova/exec'),
+        cordova = require('cordova');
 
-channel.createSticky('onCordovaInfoReady');
+    var keytalk = {
 
-// Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
+               login: function(success, error, args) {
+               
+               if (args.length == 0 || args[0] < 0) {
+                    // Invalid call to the plugin, so return an error condition
+                    error('Parameters are missing');
+                    return;
+               }
+               
+               /**
+                Code to retrieve username, password and pincode needed to proceed
+                **/
+               
+               
 
-/**
- * This represents the mobile device, and provides properties for inspecting the model, version, UUID of the
- * phone, etc.
- * @constructor
- */
+               }
+    }
 
-var Keytalk = {
-
-	alert = function(successCallback, errorCallback) {
-    	argscheck.checkArgs('fF', 'Keytalk.alert', arguments);
-    	exec(successCallback, errorCallback, "Keytalk", "alert", [title, message, buttonLabel]);
-	};
-
-}
-
-module.exports = Keytalk;
+    module.exports = keytalk;
