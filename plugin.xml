@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-keytalk" version="0.0.4h">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-keytalk" version="0.0.4i">
     <name>Keytalk</name>
     <description>Cordova Device Plugin</description>
     <license>Apache 2.0</license>
