@@ -1,0 +1,27 @@
+{
+  "name": "Keytalk",
+  "version": "0.0.4-k",
+  "description": "Cordova Device Plugin",
+  "cordova": {
+    "id": "cordova-plugin-keytalk",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUPlabs/Keytalk.git"
+  },
+  "keywords": [
+    "cordova",
+    "keytalk",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Ronald Groennou [SUPERP]",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/SUPlabs/Keytalk/issues"
+  },
+  "homepage": "https://github.com/SUPlabs/Keytalk#readme"
+}
