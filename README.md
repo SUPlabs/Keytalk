@@ -23,3 +23,7 @@ var certificate = keytalk.login(
 Add your kt_xxx.rccd file to the recources folder.
 
 Make sure you add the file to your xCode project and activate the copy checkbox.
+
+# 3. Plugin to yout project
+cordova plugin add https://github.com/SUPlabs/Keytalk.git
+
