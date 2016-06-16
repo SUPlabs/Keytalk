@@ -20,5 +20,6 @@ var certificate = keytalk.login(
 ```
 
 # 2. Add the .rccd file to project
-Add your kt_xxx.rccd file to the recources folder
+Add your kt_xxx.rccd file to the recources folder.
+
 Make sure you add the file to your xCode project and activate the copy checkbox.
