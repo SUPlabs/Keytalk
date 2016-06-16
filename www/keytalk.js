@@ -21,7 +21,7 @@
                exec(
                 success, 
                 error, 
-                "<service>", 
+                "keytalk", 
                 "login", 
                 args
                 );
