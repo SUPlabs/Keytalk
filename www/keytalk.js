@@ -20,19 +20,11 @@
  */
 
 
-function Keytalk() {
-
+var KeyTalk = {
+	doLogin:function(successCallback, errorCallback, options) {
+    alert("Start");    
+    }
 }
 
-/**
- * Get device info
- *
- * @param {Function} successCallback The function to call when the heading data is available
- * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
- */
-Keytalk.prototype.getInfo = function(successCallback, errorCallback) {
-    // argscheck.checkArgs('fF', 'Device.getInfo', arguments);
-    // exec(successCallback, errorCallback, "Device", "getDeviceInfo", []);
-};
 
-module.exports = new Keytalk();
+module.exports = Keytalk();
