@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-keytalk" version="0.0.4j">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-keytalk" version="0.0.4k">
     <name>Keytalk</name>
     <description>Cordova Device Plugin</description>
     <license>Apache 2.0</license>
@@ -18,11 +18,11 @@
         <source-file src="src/ios/KeyTalkClient.m" />
         <header-file src="src/ios/KeyTalkClient.h" />
         <framework src="src/ios/Frameworks/KeyTalk.framework" custom="true" />
-        <framework src="Foundation" />
-        <framework src="UIKit" />
-        <framework src="Security" />
-        <framework src="CFNetwork" />
-        <framework src="CoreMotion" />
+        <framework src="Foundation.framework" />
+        <framework src="UIKit.framework" />
+        <framework src="Security.framework" />
+        <framework src="CFNetwork.framework" />
+        <framework src="CoreMotion.framework" />
         <framework src="libz.tbd" />
     </platform>
 </plugin>
