@@ -8,7 +8,7 @@
     CDVPluginResult* pluginResult = nil;
     NSString* Keytalk = [command.arguments objectAtIndex:0];
     
-    if (Keytalk != nil && [echo length] > 0) {
+    if (Keytalk != nil && [Keytalk length] > 0) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:Keytalk];
     } else {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
