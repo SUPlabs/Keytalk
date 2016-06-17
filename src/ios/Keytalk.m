@@ -1,3 +1,5 @@
+// (C) SUPERP
+
 #import "Keytalk.h"
 #import "KeyTalkClient.h"
 #import <Cordova/CDV.h>

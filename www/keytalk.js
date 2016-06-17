@@ -1,3 +1,5 @@
+// (C) SUPERP
+
     var argscheck = require('cordova/argscheck'),
         channel = require('cordova/channel'),
         utils = require('cordova/utils'),
